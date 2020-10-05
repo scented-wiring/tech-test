@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search renders correctly 1`] = `
+<DocumentFragment>
+  <input
+    class="Input"
+    data-testid="input"
+    type="text"
+  />
+</DocumentFragment>
+`;
