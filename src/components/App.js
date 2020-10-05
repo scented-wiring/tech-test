@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/App.css";
 import Search from "./Search";
+import SearchResults from "./SearchResults";
 
 const App = () => {
   const [searchResults, setSearchResults] = useState();
@@ -13,6 +14,7 @@ const App = () => {
         className="logo"
       ></img>
       <Search setSearchResults={setSearchResults} />
+      <SearchResults />
     </div>
   );
 };
