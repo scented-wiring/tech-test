@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/App.css";
 import Search from "./Search";
 
 const App = () => {
+  const [searchResults, setSearchResults] = useState();
+
   return (
     <div className="App">
       <img
@@ -10,7 +12,7 @@ const App = () => {
         alt="NASA logo"
         className="logo"
       ></img>
-      <Search />
+      <Search setSearchResults={setSearchResults} />
     </div>
   );
 };
