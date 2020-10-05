@@ -4,18 +4,26 @@ exports[`App renders correctly 1`] = `
 <DocumentFragment>
   <div
     class="App"
-    data-testid="app"
   >
     <img
       alt="NASA logo"
       class="logo"
       src="https://cdn.cnn.com/cnnnext/dam/assets/200424060716-nasa-worm-logo.jpg"
     />
-    <input
-      class="Input"
-      data-testid="input"
-      type="text"
-    />
+    <form
+      class="Form"
+    >
+      <input
+        class="Input"
+        type="text"
+      />
+      <button
+        class="Button"
+        type="submit"
+      >
+        Search
+      </button>
+    </form>
   </div>
 </DocumentFragment>
 `;
