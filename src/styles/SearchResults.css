@@ -2,7 +2,31 @@
   text-align: center;
 }
 
-.search-results-image {
-  width: 500px;
-  height: 375.5px;
+#images-wrapper {
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 0;
+  -webkit-column-count: 5;
+  -webkit-column-gap: 0px;
+  -moz-column-count: 5;
+  -moz-column-gap: 0px;
+  column-count: 5;
+  column-gap: 0px;
+}
+#images-wrapper img {
+  width: 100% !important;
+  height: auto !important;
+}
+#images-wrapper {
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card-image {
+  border-top: 1.5px solid white;
+  border-bottom: 1.5px solid white;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
 }
