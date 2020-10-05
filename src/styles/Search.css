@@ -1,5 +1,25 @@
+.Form {
+  margin: auto;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+}
+
 .Input {
   display: block;
-  margin: auto;
-  width: 20%;
+  width: 100%;
+}
+
+.Button {
+  color: #fff !important;
+  background: red;
+  padding: 8px;
+  border: solid 1px black;
+  transition: all 0.4s ease 0s;
+  font-weight: bold;
+}
+
+.Button:hover {
+  color: red !important;
+  background: white;
 }

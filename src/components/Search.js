@@ -2,9 +2,20 @@ import React, { useState } from "react";
 import "../styles/Search.css";
 
 function Search() {
+  const [value, setValue] = useState(0);
+
   return (
     <>
-      <input type="text" className="Input" data-testid="input"></input>
+      <form className="Form">
+        <input
+          type="text"
+          className="Input"
+          onChange={(e) => setValue(e.target.value)}
+        ></input>
+        <button className="Button" type="submit">
+          Search
+        </button>
+      </form>
     </>
   );
 }
