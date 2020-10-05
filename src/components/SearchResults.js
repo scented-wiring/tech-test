@@ -12,7 +12,14 @@ const SearchResults = ({ results }) => {
     return (
       <div id="images-wrapper">
         {results.map((image) => (
-          <img className="card-image" src={image} alt="spaceImage" />
+          <a href={image} target="_blank" rel="noopener noreferrer" key={image}>
+            <img
+              className="card-image"
+              src={image}
+              alt="spaceImage"
+              key={image}
+            />
+          </a>
         ))}
       </div>
     );
