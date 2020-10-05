@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/App.css";
 import Search from "./Search";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <img
@@ -13,6 +13,6 @@ function App() {
       <Search />
     </div>
   );
-}
+};
 
 export default App;
