@@ -1,13 +1,12 @@
 .Form {
   margin: auto;
-  width: 30%;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .Input {
-  display: block;
-  width: 100%;
+  width: 300px;
 }
 
 .Button {
@@ -17,6 +16,7 @@
   border: solid 1px black;
   transition: all 0.4s ease 0s;
   font-weight: bold;
+  width: 80px;
 }
 
 .Button:hover {
@@ -26,4 +26,18 @@
 
 .loading {
   text-align: center;
+}
+
+@media (max-width: 480px) {
+  .Input {
+    width: 100px;
+    height: 10px;
+  }
+
+  .Button {
+    width: 50px;
+    font-size: 8px;
+    padding: 0;
+    border: 0;
+  }
 }
