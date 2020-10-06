@@ -2,6 +2,14 @@
 
 The brief for this project was to create a React application that allows users to search for space-related images based on queries
 
+# Screenshots
+
+![App desktop screenshot](https://github.com/scented-wiring/tech-test/blob/main/README%20images/nasa-app-desktop.png?raw=true)
+Desktop
+
+![App mobile screenshot](https://github.com/scented-wiring/tech-test/blob/main/README%20images/nasa-app-mobile.png?raw=true)
+Mobile
+
 ## Built with
 
 - React
