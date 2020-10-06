@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchResults renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    id="images-wrapper"
+  >
+    <a
+      href="[object Object]"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="spaceImage"
+        class="card-image"
+        src="[object Object]"
+      />
+    </a>
+  </div>
+</DocumentFragment>
+`;
