@@ -3,7 +3,7 @@ import "../styles/Search.css";
 import getImages from "../requests/getImages";
 import PropTypes from "prop-types";
 
-const Search = ({ setSearchResults }) => {
+const Search = ({ setSearchResults, setSearchSubmit }) => {
   const [value, setValue] = useState("");
   const [load, setLoad] = useState(false);
 
@@ -12,6 +12,7 @@ const Search = ({ setSearchResults }) => {
     event.preventDefault();
     setSearchResults(await getImages(value));
     setLoad(false);
+    setSearchSubmit(true);
   };
 
   if (load) {

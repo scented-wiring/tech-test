@@ -2,28 +2,37 @@ import React from "react";
 import "../styles/SearchResults.css";
 import PropTypes from "prop-types";
 
-const SearchResults = ({ results }) => {
-  if (!results.length) {
-    return (
-      <div className="search-results">
-        <p>No results.</p>
-      </div>
-    );
+const SearchResults = ({ results, submit }) => {
+  if (submit === false) {
+    return null;
   } else {
-    return (
-      <div id="images-wrapper">
-        {results.map((image) => (
-          <a href={image} target="_blank" rel="noopener noreferrer" key={image}>
-            <img
-              className="card-image"
-              src={image}
-              alt="spaceImage"
+    if (!results.length) {
+      return (
+        <div className="search-results">
+          <p>No results.</p>
+        </div>
+      );
+    } else {
+      return (
+        <div id="images-wrapper">
+          {results.map((image) => (
+            <a
+              href={image}
+              target="_blank"
+              rel="noopener noreferrer"
               key={image}
-            />
-          </a>
-        ))}
-      </div>
-    );
+            >
+              <img
+                className="card-image"
+                src={image}
+                alt="spaceImage"
+                key={image}
+              />
+            </a>
+          ))}
+        </div>
+      );
+    }
   }
 };
 
