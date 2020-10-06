@@ -8,6 +8,7 @@ const Search = ({ setSearchResults, setSearchSubmit }) => {
   const [load, setLoad] = useState(false);
 
   const handleSubmit = async (event) => {
+    setSearchSubmit(false);
     setLoad(true);
     event.preventDefault();
     setSearchResults(await getImages(value));
