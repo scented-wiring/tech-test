@@ -23,3 +23,7 @@
   color: red !important;
   background: white;
 }
+
+.loading {
+  text-align: center;
+}

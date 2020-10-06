@@ -5,11 +5,18 @@ import PropTypes from "prop-types";
 
 const Search = ({ setSearchResults }) => {
   const [value, setValue] = useState("");
+  const [load, setLoad] = useState(false);
 
   const handleSubmit = async (event) => {
+    setLoad(true);
     event.preventDefault();
     setSearchResults(await getImages(value));
+    setLoad(false);
   };
+
+  if (load) {
+    return <div className="loading">Searching...</div>;
+  }
 
   return (
     <>
