@@ -18,8 +18,9 @@ const Search = ({ setSearchResults }) => {
           type="text"
           className="Input"
           onChange={(e) => setValue(e.target.value)}
+          data-testid="input"
         ></input>
-        <button className="Button" type="submit">
+        <button className="Button" type="submit" data-testid="button">
           Search
         </button>
       </form>
