@@ -6,6 +6,7 @@ import SearchResults from "./SearchResults";
 const App = () => {
   const [searchResults, setSearchResults] = useState([]);
   const [searchSubmit, setSearchSubmit] = useState(false);
+  const [query, setQuery] = useState(null);
 
   return (
     <div className="App">
@@ -17,8 +18,13 @@ const App = () => {
       <Search
         setSearchResults={setSearchResults}
         setSearchSubmit={setSearchSubmit}
+        setQuery={setQuery}
       />
-      <SearchResults results={searchResults} submit={searchSubmit} />
+      <SearchResults
+        results={searchResults}
+        submit={searchSubmit}
+        query={query}
+      />
     </div>
   );
 };

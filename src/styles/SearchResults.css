@@ -1,9 +1,10 @@
 .search-results {
   text-align: center;
+  margin-top: 25px;
 }
 
 #images-wrapper {
-  padding-top: 50px;
+  padding-top: 25px;
   padding-left: 5px;
   padding-right: 10px;
   line-height: 0;
